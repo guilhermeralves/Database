@@ -2,13 +2,29 @@
 
 # Principais Tópicos desse Artigo:
 
-- Construção de um banco de dados
-- Manipulação e Organizações de Dados
+- Introdução ao Modelo Relacional
+- Manipulação e Organização de Dados
 - 
 
 
 
 
 
-# Construção de Banco de Dados
+## Introdução ao Modelo Relacional
 
+O modelo relacional é um método de organizar os dados usando tabelas compostas por linhas e colunas. Cada tabela representa uma entidade, e as relações entre essas entidades são definidas pelas chaves primárias, comumente chamadas de (Primary Key - PK) e estrangeiras (Foreign key - FK).
+
+Exemplo Modelo Relacional:
+
+![ER_Banco_de_Dados_1](https://github.com/guilhermeralves/banco_de_dados/assets/54563385/d62039f8-cb2d-4877-879d-d792e64e4182)
+
+Exemplo de relação entre entidades:
+
+
+Principais Componentes:
+
+Tabela: Também conhecida como relação, é a estrutura básica do modelo relacional. Cada tabela é composta por linhas (registros) e colunas (atributos ou campos).
+
+Chave Primária (Primary Key): É um atributo ou conjunto de atributos que identifica exclusivamente cada registro em uma tabela. Garante a unicidade dos dados.
+
+Chave Estrangeira (Foreign key): É um atributo em uma tabela que estabelece uma relação com a chave primária de outra tabela. É usada para criar associações entre tabelas.
