@@ -4,11 +4,8 @@
 
 - Introdução ao Modelo Relacional
 - Manipulação e Organização de Dados
-- 
-
-
-
-
+- Linguagem de manipulação Padrão 
+-  
 
 ## Introdução ao Modelo Relacional
 
