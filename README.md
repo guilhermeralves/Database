@@ -16,15 +16,44 @@ O modelo relacional é um método de organizar os dados usando tabelas compostas
 
 Os principais Componentes são:
 
-Tabela: Também conhecida como relação, é a estrutura básica do modelo relacional. Cada tabela é composta por linhas (registros) e colunas (atributos ou campos).
+Tabela: Também conhecida como Entidade, é a estrutura básica do modelo relacional. Cada tabela é composta por linhas (registros) e colunas (atributos ou campos).
 
 Chave Primária (Primary Key): É um atributo ou conjunto de atributos que identifica exclusivamente cada registro em uma tabela. Garante a unicidade dos dados.
 
 Chave Estrangeira (Foreign key): É um atributo em uma tabela que estabelece uma relação com a chave primária de outra tabela. É usada para criar associações entre tabelas.
 
-Exemplo Modelo Relacional:
+Exemplo do Modelo Relacional:
 
 ![ER_Banco_de_Dados_1](https://github.com/guilhermeralves/banco_de_dados/assets/54563385/857135e0-405e-44a0-bc73-6b16c31b2628)
 
 
 Na Imagem a cima, temos uma explicação mais visual, Exemplo de um modelo relacional com 3 entidades: "Livro", "Autor" e "Editora". Podemos perceber, como já comentado, que a relação entre as entidades se dá através das Primary Key´s e Foreign Key´s. A entidade "Livro" se relaciona com a entidade "Autor" através da Foreign Key: "ID_Autor", já o relacionamento entre: "Livro" e "Editora" acontece por meio da Foreign Key: "ID_Editora".
+
+## Manipulação e Organização de Dados
+
+Em qualquer modelo de banco de dados, será necessário o auxílio de um SGBD (Sistema de Gerenciamento de Banco de Dados). Ele é o Software responsável por várias tarefas essenciais relacionadas ao armazenamento, organização, manipulação e proteção dos dados.
+
+Alguns Exemplos de SGBDs:
+
+- Microsoft SQL Management Studio
+- MySql
+- PostgreSQL
+- Oracle DataBase
+
+Dentre as Responsabilidades de um SGBD, encontra-se:
+
+- Criação e Definição de Esquemas: O SGBD permite criar a estrutura do banco de dados, incluindo a definição de tabelas, índices, restrições e relacionamentos entre os dados.
+
+- Recuperação de Dados: Permite recuperar dados de maneira eficiente através de consultas.
+
+- Manipulação de Dados: Possibilita a inserção, atualização e exclusão de dados no banco de dados, garantindo a integridade e consistência dos dados.
+
+- Controle de Concorrência: Garante que múltiplos usuários possam acessar e manipular os dados simultaneamente de forma segura e consistente, evitando problemas como leituras sujas, escritas sujas e conflitos de atualização.
+
+- Implementação de Restrições de Integridade: O SGBD impõe regras de integridade referencial para garantir que os dados permaneçam consistentes e precisos, como chaves primárias, chaves estrangeiras e restrições de verificação.
+
+- Backup e Recuperação: Fornece recursos para fazer backup regular dos dados e recuperá-los em caso de falhas, garantindo a segurança e disponibilidade dos dados.
+
+- Segurança e Controle de Acesso: O SGBD oferece recursos para controlar o acesso aos dados, incluindo autenticação, autorização e criptografia, garantindo que apenas usuários autorizados possam acessar e manipular os dados.
+
+Essas são apenas algumas das responsabilidades fundamentais, Em resumo, o SGBD atua como uma camada intermediária entre os usuários/aplicativos e os dados armazenados, facilitando o gerenciamento eficiente e seguro dos dados.
