@@ -16,7 +16,7 @@ O modelo relacional é um método de organizar os dados usando tabelas compostas
 
 Exemplo Modelo Relacional:
 
-![ER_Banco_de_Dados_1](https://github.com/guilhermeralves/banco_de_dados/assets/54563385/d62039f8-cb2d-4877-879d-d792e64e4182)
+![ER_Banco_de_Dados_1](https://github.com/guilhermeralves/banco_de_dados/assets/54563385/857135e0-405e-44a0-bc73-6b16c31b2628)
 
 Exemplo de relação entre entidades:
 
