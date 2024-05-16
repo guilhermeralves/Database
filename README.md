@@ -40,6 +40,8 @@ Alguns Exemplos de SGBDs:
 - PostgreSQL
 - Oracle DataBase
 
+![Exemplos_SGBD´s](https://github.com/guilhermeralves/banco_de_dados/assets/54563385/6615ad6a-b77d-4c3e-ae5f-53175efef236)
+
 Dentre as Responsabilidades de um SGBD, encontra-se:
 
 - Criação e Definição de Esquemas: O SGBD permite criar a estrutura do banco de dados, incluindo a definição de tabelas, índices, restrições e relacionamentos entre os dados.
