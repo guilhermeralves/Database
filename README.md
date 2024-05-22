@@ -2,9 +2,9 @@
 
 # Principais Tópicos desse Artigo:
 
-- Introdução ao Modelo Relacional
-- Manipulação e Organização de Dados
-- Linguagem de manipulação Padrão 
+- Introdução ao Modelo Relacional.
+- Manipulação e Organização de Dados.
+- Linguagem de Manipulação Padrão.
 -  
 
 ## Introdução ao Modelo Relacional
@@ -56,3 +56,45 @@ Dentre as Responsabilidades de um SGBD, encontra-se:
 - Segurança e Controle de Acesso: O SGBD oferece recursos para controlar o acesso aos dados, incluindo autenticação, autorização e criptografia, garantindo que apenas usuários autorizados possam acessar e manipular os dados.
 
 Essas são apenas algumas das responsabilidades fundamentais, Em resumo, o SGBD atua como uma camada intermediária entre os usuários/aplicativos e os dados armazenados, facilitando o gerenciamento eficiente e seguro dos dados.
+
+## Linguagem de Manipulação Padrão
+
+### SQL (Structure Query Language)
+
+Com a criação dos SGBD´s, e a popularização dos Bancos de Dados Relacionais, foi necessário a construção de uma linguagem padrão para qualquer projeto que envolvesse os Bancos de Dados Relacionais. Foi criado então a SQL (Structure Query Language), que permite a execução de diversas operações sobre os dados armazenados, tais como consulta, inserção, atualização e exclusão.
+
+Principais Componentes do SQL:
+
+ - DDL (Data Definition Language)
+
+Utilizada para definir e modificar a estrutura dos objetos no banco de dados, como tabelas e índices.
+    Comandos principais:
+        CREATE: Cria novos objetos, como tabelas e índices.
+        ALTER: Modifica a estrutura de objetos existentes.
+        DROP: Exclui objetos do banco de dados.
+        TRUNCATE: Remove todos os registros de uma tabela, mas mantém a estrutura intacta.
+
+ - DML (Data Manipulation Language)
+
+Utilizada para manipular os dados dentro das tabelas.
+    Comandos principais:
+        SELECT: Consulta dados no banco de dados.
+        INSERT: Insere novos registros.
+        UPDATE: Atualiza registros existentes.
+        DELETE: Exclui registros.
+
+ - DCL (Data Control Language)
+
+Utilizada para controlar o acesso aos dados.
+    Comandos principais:
+        GRANT: Concede permissões aos usuários.
+        REVOKE: Revoga permissões dos usuários.
+
+ - TCL (Transaction Control Language)
+
+Utilizada para gerenciar transações no banco de dados, garantindo que as operações sejam realizadas de forma consistente e segura.
+    Comandos principais:
+        COMMIT: Confirma as transações realizadas.
+        ROLLBACK: Desfaz transações não confirmadas.
+        SAVEPOINT: Define pontos de salvamento dentro de uma transação.
+
