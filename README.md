@@ -131,6 +131,8 @@ Ofereçer Suporte Técnico a equipe e usuários do banco de dados, trazendo dese
 
 ## Modelagem do Banco de Dados
 
+![header_banco_de_dados_sql](https://github.com/guilhermeralves/banco_de_dados/assets/54563385/0bc52081-505f-41d8-813e-eb889b9c4cf6)
+
 A organização e Modelagem de um Banco de Dados é feita à partir de 3 níveis de abstração dos dados coletado através do cliente final. Esses 3 níveis são:
 
 - Externo (Visão do Usuário)
