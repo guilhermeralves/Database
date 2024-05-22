@@ -63,6 +63,8 @@ Essas são apenas algumas das responsabilidades fundamentais, Em resumo, o SGBD 
 
 Com a criação dos SGBD´s, e a popularização dos Bancos de Dados Relacionais, foi necessário a construção de uma linguagem padrão para qualquer projeto que envolvesse os Bancos de Dados Relacionais. Foi criado então a SQL (Structure Query Language), que permite a execução de diversas operações sobre os dados armazenados, tais como consulta, inserção, atualização e exclusão.
 
+![subconjuntos-sql](https://github.com/guilhermeralves/banco_de_dados/assets/54563385/7cf47898-023e-4457-bb6e-0b4cadef8a73)
+
 Principais Componentes do SQL:
 
  - DDL (Data Definition Language)
