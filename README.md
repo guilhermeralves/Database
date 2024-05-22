@@ -103,87 +103,83 @@ Comandos principais:
 
 Utilizada para gerenciar transações no banco de dados, garantindo que as operações sejam realizadas de forma consistente e segura.
 
-    Comandos principais:
+Comandos principais:
 
-     - COMMIT: Confirma as transações realizadas.
-     - ROLLBACK: Desfaz transações não confirmadas.
-     - SAVEPOINT: Define pontos de salvamento dentro de uma transação.
+- COMMIT: Confirma as transações realizadas.
+- ROLLBACK: Desfaz transações não confirmadas.
+- SAVEPOINT: Define pontos de salvamento dentro de uma transação.
 
 ### DBA (DataBase Administrator)
 
 É o profissional responsável pela administração e gerenciamento do banco de dados, suas príncipais responsabilidades são:
 
-    - Criação, Instalação, Configuração e Manutenção:
+- Criação, Instalação, Configuração e Manutenção:
 
-        Ajudar na criação da arquitetura do banco de dados direcionado ao projeto específico, fazer instalações físicas e tambem configurações no SGBD envolvido e Gerenciar a manutenção do banco de dados sendo responsável pela boa performance na requisição de dados ou seja no tempo de resposta do servidor à aplicação.
+Ajudar na criação da arquitetura do banco de dados direcionado ao projeto específico, fazer instalações físicas e tambem configurações no SGBD envolvido e Gerenciar a manutenção do banco de dados sendo responsável pela boa performance na requisição de dados ou seja no tempo de resposta do servidor à aplicação.
 
-    - Backup e Recuperação de Dados:
+- Backup e Recuperação de Dados:
 
-        Planejar e Implementar estratégias de backup e recuperação de dados mantendo a proteção e integridade dos dados guardados, disponíveis sempre que solicitados.
+Planejar e Implementar estratégias de backup e recuperação de dados mantendo a proteção e integridade dos dados guardados, disponíveis sempre que solicitados.
 
-    - Seurança:
+- Seurança:
 
-        Configurar e arquitetar permissões de acessos, controlando assim quem pode acessar os dados e executar comandos no banco de dados.
+Configurar e arquitetar permissões de acessos, controlando assim quem pode acessar os dados e executar comandos no banco de dados.
 
-    - Suporte Técnico e Solução de Problemas:
+- Suporte Técnico e Solução de Problemas:
 
-        Ofereçer Suporte Técnico a equipe e usuários do banco de dados, trazendo desempenho e resolução de problemas reacionados ao banco de dados.
+Ofereçer Suporte Técnico a equipe e usuários do banco de dados, trazendo desempenho e resolução de problemas reacionados ao banco de dados.
 
 ## Modelagem do Banco de Dados
 
 A organização e Modelagem de um Banco de Dados é feita à partir de 3 níveis de abstração dos dados coletado através do cliente final. Esses 3 níveis são:
 
-    - Externo (Visão do Usuário)
+- Externo (Visão do Usuário)
 
-        No nível de abstração Externo é feito o levantamento das informações fornecidas pelo cliente, indentificado quais serão os tipos de dados guardados e os tipos de usuários que farão requisições ao banco e quais permissões serão utilizadas para cada tipo de usuário.
+No nível de abstração Externo é feito o levantamento das informações fornecidas pelo cliente, indentificado quais serão os tipos de dados guardados e os tipos de usuários que farão requisições ao banco e quais permissões serão utilizadas para cada tipo de usuário.
 
-    - Conceitual (Visão Lógica)
+- Conceitual (Visão Lógica)
 
-        No Nível Conceitual é feito o processo de "Normalização" de todas as informações fornecidas pelo cliente e a identificação dos tipos dos dados por termos técnicos como: dados tipo texto, numero, data. quantidade e identificação das entidades, atributos, linhas, relacionamentos e restrições. Trazendo uma visão abrangente e coesa criando assim a arquitetura que irá suprir as demandas do sistema.
+No Nível Conceitual é feito o processo de "Normalização" de todas as informações fornecidas pelo cliente e a identificação dos tipos dos dados por termos técnicos como: dados tipo texto, numero, data. quantidade e identificação das entidades, atributos, linhas, relacionamentos e restrições. Trazendo uma visão abrangente e coesa criando assim a arquitetura que irá suprir as demandas do sistema.
 
-    - Interno (Visão Física)
+- Interno (Visão Física)
 
-        O nível de abstração Interno é responsável por identificar como será o armazenamento físico dos dados, tipos de disco de Armazenamento, HDD´s ou SSD´s, Quais serão os Índices Útilizados, como será a estrutura física, qual será as configurações mínimas e recomendadas para suprir o SGBD e o Banco de Dados em funcionamento, quais serão os particionamentos nos discos, todas essas etapas serão direcionadas ao desempenho e a minimização do tempo de resposta à requisição da aplicação.
+O nível de abstração Interno é responsável por identificar como será o armazenamento físico dos dados, tipos de disco de Armazenamento, HDD´s ou SSD´s, Quais serão os Índices Útilizados, como será a estrutura física, qual será as configurações mínimas e recomendadas para suprir o SGBD e o Banco de Dados em funcionamento, quais serão os particionamentos nos discos, todas essas etapas serão direcionadas ao desempenho e a minimização do tempo de resposta à requisição da aplicação.
 
 ## Principais Conceitos
 
 Os principais conceitos que serão estudados são: 
 
-    - Tabelas (Relações ou Entidades)
-        Conjuntos de informações, elementos do mundo real distinguíveis.
+- Tabelas (Relações ou Entidades)
 
+Conjuntos de informações, elementos do mundo real distinguíveis.
 
-
-    - Linhas (Elementos ou Registros)
+- Linhas (Elementos ou Registros)
         
-        Cada linha refere-se a um determinado elemento real.
+Cada linha refere-se a um determinado elemento real.
 
+- Colunas (Atributos ou Propriedades)
 
+São todos os dados referentes a um determindado elemento.
 
-    - Colunas (Atributos ou Propriedades)
+Tipos de Atributos:
 
-        São todos os dados referentes a um determindado elemento.
+- Simples: dado único, sem divisão.
+Exemplo: CPF "005.326.548.38", impossível dividir.
 
-        Tipos de Atributos:
+- Composto: Dado composto, com sub-divisão.
+Exemplo: Endereço "Rua, Número, Cidade" duas ou mais informações.
 
-            - Simples: dado único, sem divisão.
-                Exemplo: CPF "005.326.548.38", impossível dividir.
+- MonoValorado: atributo de valor único para aquele elemento.
+Exemplo: "Nome, CPF"
 
-            - Composto: Dado composto, com sub-divisão.
-                Exemplo: Endereço "Rua, Número, Cidade" duas ou mais informações.
+- MultiValorado: Atributo com possíveis valores.
+Exemplo: "Telefone, Endereço pode ser residencial ou comercial"
 
-            - MonoValorado: atributo de valor único para aquele elemento.
-                Exemplo: "Nome, CPF"
+- Nulo: Atributo com ausencia de valor.
 
-            - MultiValorado: Atributo com possíveis valores.
-                Exemplo: "Telefone, Endereço pode ser residencial ou comercial"
+- Devirado: Atributos que podem derivar outros atributos.
+Exemplo: "Data de Nascimento -> Idade"
 
-            - Nulo: Atributo com ausencia de valor.
-
-            - Devirado: Atributos que podem derivar outros atributos.
-                Exemplo: "Data de Nascimento -> Idade"
-
-    - Domínios
-
-        São todos os tipos de dados possíveis de cada Coluna. 
+- Domínios
+São todos os tipos de dados possíveis de cada Coluna. 
 
