@@ -60,7 +60,7 @@ Essas são apenas algumas das responsabilidades fundamentais, Em resumo, o SGBD 
 
 ## Linguagem de Manipulação Padrão
 
-### SQL (Structure Query Language)
+SQL (Structure Query Language) 
 
 Com a criação dos SGBD´s, e a popularização dos Bancos de Dados Relacionais, foi necessário a construção de uma linguagem padrão para qualquer projeto que envolvesse os Bancos de Dados Relacionais. Foi criado então a SQL (Structure Query Language), que permite a execução de diversas operações sobre os dados armazenados, tais como consulta, inserção, atualização e exclusão.
 
@@ -68,38 +68,38 @@ Com a criação dos SGBD´s, e a popularização dos Bancos de Dados Relacionais
 
 Principais Componentes do SQL:
 
- - DDL (Data Definition Language)
+### DDL (Data Definition Language)
 
 Utilizada para definir e modificar a estrutura dos objetos no banco de dados, como tabelas e índices.
 
-    Comandos principais:
+Comandos principais:
 
-     - CREATE: Cria novos objetos, como tabelas e índices.
-     - ALTER: Modifica a estrutura de objetos existentes.
-     - DROP: Exclui objetos do banco de dados.
-     - TRUNCATE: Remove todos os registros de uma tabela, mas mantém a estrutura intacta.
+- CREATE: Cria novos objetos, como tabelas e índices.
+- ALTER: Modifica a estrutura de objetos existentes.
+- DROP: Exclui objetos do banco de dados.
+- TRUNCATE: Remove todos os registros de uma tabela, mas mantém a estrutura intacta.
 
- - DML (Data Manipulation Language)
+### DML (Data Manipulation Language)
 
 Utilizada para manipular os dados dentro das tabelas.
 
-    Comandos principais:
+Comandos principais:
 
-     - SELECT: Consulta dados no banco de dados.
-     - INSERT: Insere novos registros.
-     - UPDATE: Atualiza registros existentes.
-     - DELETE: Exclui registros.
+- SELECT: Consulta dados no banco de dados.
+- INSERT: Insere novos registros.
+- UPDATE: Atualiza registros existentes.
+- DELETE: Exclui registros.
 
- - DCL (Data Control Language)
+### DCL (Data Control Language)
 
 Utilizada para controlar o acesso aos dados.
 
-    Comandos principais:
+Comandos principais:
 
-     - GRANT: Concede permissões aos usuários.
-     - REVOKE: Revoga permissões dos usuários.
+- GRANT: Concede permissões aos usuários.
+- REVOKE: Revoga permissões dos usuários.
 
- - TCL (Transaction Control Language)
+### TCL (Transaction Control Language)
 
 Utilizada para gerenciar transações no banco de dados, garantindo que as operações sejam realizadas de forma consistente e segura.
 
@@ -164,7 +164,24 @@ Os principais conceitos que serão estudados são:
 
         São todos os dados referentes a um determindado elemento.
 
+        Tipos de Atributos:
 
+            - Simples: dado único, sem divisão.
+                Exemplo: CPF "005.326.548.38", impossível dividir.
+
+            - Composto: Dado composto, com sub-divisão.
+                Exemplo: Endereço "Rua, Número, Cidade" duas ou mais informações.
+
+            - MonoValorado: atributo de valor único para aquele elemento.
+                Exemplo: "Nome, CPF"
+
+            - MultiValorado: Atributo com possíveis valores.
+                Exemplo: "Telefone, Endereço pode ser residencial ou comercial"
+
+            - Nulo: Atributo com ausencia de valor.
+
+            - Devirado: Atributos que podem derivar outros atributos.
+                Exemplo: "Data de Nascimento -> Idade"
 
     - Domínios
 
