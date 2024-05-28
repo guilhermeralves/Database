@@ -207,3 +207,16 @@ A seguir temos um exemplo de uma tabela que não fere as regras da 1FN:
 
 ![banco_de_dados_git](https://github.com/guilhermeralves/banco_de_dados/assets/54563385/ccb1499f-44ab-4909-92e6-daceb5cfcd91)
 
+Pode-se perceber que nenhum dos cadastros realizados nesse tabela estão ferindo as regras da Primeira Forma Normal (1FN), estão dentro dos padrões:
+
+- O atributo "cpf" é o PK - Primary Key dessa entidade, esse atributo é único na tabela para cada registro.
+
+- Não temos nenhum atributo 'Composto' ou seja, dados que podem ser separados.
+
+- Nenhum atributo se repete ao longo dos cadastros.
+
+- Tambem não temos atributos derivados.
+
+Porém ao adicionar mais atributos na tabela, temos uma tabela que já não faz mais parte da Primeira Forma Normal (1FN)
+
+![Captura de tela 2024-05-28 125906](https://github.com/guilhermeralves/banco_de_dados/assets/54563385/5656c29c-f4f2-4818-ba56-30a7dc176ac1)
