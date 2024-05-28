@@ -6,7 +6,8 @@
 - Manipulação e Organização de Dados.
 - Linguagem de Manipulação Padrão.
 - Modelagem do Banco de Dados.
-- Principais Conceitos. 
+- Principais Conceitos.
+- Formas de Normalização e Padronização.
 
 ## Introdução ao Modelo Relacional
 
@@ -127,21 +128,21 @@ Configurar e arquitetar permissões de acessos, controlando assim quem pode aces
 
 - Suporte Técnico e Solução de Problemas:
 
-Ofereçer Suporte Técnico a equipe e usuários do banco de dados, trazendo desempenho e resolução de problemas reacionados ao banco de dados.
+Ofereçer Suporte Técnico a equipe e usuários do banco de dados, trazendo desempenho e resolução de problemas relacionados ao banco de dados.
 
 ## Modelagem do Banco de Dados
 
 ![header_banco_de_dados_sql](https://github.com/guilhermeralves/banco_de_dados/assets/54563385/0bc52081-505f-41d8-813e-eb889b9c4cf6)
 
-A organização e Modelagem de um Banco de Dados é feita à partir de 3 níveis de abstração dos dados coletado através do cliente final. Esses 3 níveis são:
+A organização e modelagem de um Banco de Dados é feita à partir de 3 níveis de abstração dos dados coletados através do cliente final. Esses 3 níveis são:
 
 - Externo (Visão do Usuário)
 
-No nível de abstração Externo é feito o levantamento das informações fornecidas pelo cliente, indentificado quais serão os tipos de dados guardados e os tipos de usuários que farão requisições ao banco e quais permissões serão utilizadas para cada tipo de usuário.
+No nível de abstração Externo é feito o levantamento das informações fornecidas pelo cliente, indentificado quais serão os tipos de dados guardados os tipos de usuários que farão requisições ao banco e quais permissões serão utilizadas para cada tipo de usuário.
 
 - Conceitual (Visão Lógica)
 
-No Nível Conceitual é feito o processo de "Normalização" de todas as informações fornecidas pelo cliente e a identificação dos tipos dos dados por termos técnicos como: dados tipo texto, numero, data. quantidade e identificação das entidades, atributos, linhas, relacionamentos e restrições. Trazendo uma visão abrangente e coesa criando assim a arquitetura que irá suprir as demandas do sistema.
+No Nível Conceitual é feito o processo de "Normalização" de todas as informações fornecidas pelo cliente e a identificação dos tipos dos dados por termos técnicos como: dados tipo texto, numero, Quantidade e identificação das entidades, atributos, linhas, relacionamentos e restrições. Trazendo uma visão abrangente e coesa criando assim a arquitetura que irá suprir as demandas do sistema.
 
 - Interno (Visão Física)
 
@@ -184,4 +185,25 @@ Exemplo: "Data de Nascimento -> Idade"
 
 - Domínios
 São todos os tipos de dados possíveis de cada Coluna. 
+
+## Formas de Normalização e Padronização.
+
+As formas normais são princípios e técnicas de design utilizadas para estruturar bancos de dados relacionais de maneira eficiente e minimizar a redundância e dependências indesejadas. A normalização é o processo de organizar os dados.
+
+### Primeira Forma Normal (1FN)
+
+As regras para que uma tabela não venha à ferir a 1FN são:
+
+- As tabelas contém somente atributos simples.
+
+- Não contém atributos totalizadores ou Derivados, aqueles que pode ser derivados de outros atributos.
+
+- Não contém atributos repetidos.
+
+- Todas as linhas são diferentes em relação a chave primária.
+
+
+A seguir temos um exemplo de uma tabela que não fere as regras da 1FN:
+
+![banco_de_dados_git](https://github.com/guilhermeralves/banco_de_dados/assets/54563385/ccb1499f-44ab-4909-92e6-daceb5cfcd91)
 
