@@ -225,8 +225,10 @@ Podemos perceber que o atributo "endereco" tem registros compostos.
 
 Uma forma de transformar as condições para que essa tabela esteja enquadrada na 1FN, seria dividir os registros do atributo "endereco" em novos atributos compostos por registros simples. Dessa forma a tabela teria novos atributos como: "rua", "numero", "cidade" e "estado" e cada um desses novos atributos teriam registros simples, enquadrando-se na 1FN.
 
-![Captura de tela 2024-05-28 151343](https://github.com/guilhermeralves/banco_de_dados/assets/54563385/45808206-7906-4d5b-aec0-1ac3cec168ef)
+![Captura de tela 2024-05-28 162154](https://github.com/guilhermeralves/banco_de_dados/assets/54563385/c5611030-922e-434f-818d-509296821b84)
 
-Uma segunda opção seria criar uma nova tabela para guardar essas informações sobre o atributo endereço, nessa opção teriamos duas tabelas facilitando a busca pelas informações e ainda mantando a cultura da 1FN.
+Uma segunda opção seria criar uma nova tabela para guardar essas informações sobre o atributo endereço, nessa opção teriamos duas tabelas facilitando a busca pelas informações e ainda mantendo a cultura da 1FN.
 
 ![Captura de tela 2024-05-28 153622](https://github.com/guilhermeralves/banco_de_dados/assets/54563385/f61e5ca4-3c28-4bcd-89dc-04ef417a800d)
+
+Nessa segunda opção vemos também que a entidade "endereco" se relaciona com a entidade "aluno" através da Primary Key "id_endereco" que pode ser encontrada como uma Foreign Key na entidade "aluno".
