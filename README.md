@@ -209,7 +209,7 @@ A seguir temos um exemplo de uma tabela que não fere as regras da 1FN:
 
 Pode-se perceber que nenhum dos cadastros realizados nesse tabela estão ferindo as regras da Primeira Forma Normal (1FN), estão dentro dos padrões:
 
-- O atributo "cpf" é o PK - Primary Key dessa entidade, esse atributo é único na tabela para cada registro.
+- O atributo "cpf" é o Primary Key (PK) da entidade "aluno", esse atributo é único na tabela para cada registro.
 
 - Não temos nenhum atributo 'Composto' ou seja, dados que podem ser separados.
 
@@ -217,6 +217,16 @@ Pode-se perceber que nenhum dos cadastros realizados nesse tabela estão ferindo
 
 - Tambem não temos atributos derivados.
 
-Porém ao adicionar mais atributos na tabela, temos uma tabela que já não faz mais parte da Primeira Forma Normal (1FN)
+Porém ao adicionar mais atributos, temos uma tabela que já não faz mais parte da Primeira Forma Normal (1FN)
 
 ![Captura de tela 2024-05-28 125906](https://github.com/guilhermeralves/banco_de_dados/assets/54563385/5656c29c-f4f2-4818-ba56-30a7dc176ac1)
+
+Podemos perceber que o atributo "endereco" tem registros compostos.
+
+Uma forma de transformar as condições para que essa tabela esteja enquadrada na 1FN, seria dividir os registros do atributo "endereco" em novos atributos compostos por registros simples. Dessa forma a tabela teria novos atributos como: "rua", "numero", "cidade" e "estado" e cada um desses novos atributos teriam registros simples, enquadrando-se na 1FN.
+
+![Captura de tela 2024-05-28 151343](https://github.com/guilhermeralves/banco_de_dados/assets/54563385/45808206-7906-4d5b-aec0-1ac3cec168ef)
+
+Uma segunda opção seria criar uma nova tabela para guardar essas informações sobre o atributo endereço, nessa opção teriamos duas tabelas facilitando a busca pelas informações e ainda mantando a cultura da 1FN.
+
+![Captura de tela 2024-05-28 153622](https://github.com/guilhermeralves/banco_de_dados/assets/54563385/f61e5ca4-3c28-4bcd-89dc-04ef417a800d)
