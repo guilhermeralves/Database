@@ -2,12 +2,15 @@
 
 # Principais Tópicos desse Artigo:
 
-- Introdução ao Modelo Relacional.
-- Manipulação e Organização de Dados.
-- Linguagem de Manipulação Padrão.
-- Modelagem do Banco de Dados.
-- Principais Conceitos.
-- Formas de Normalização e Padronização.
+- Introdução ao Modelo Relacional
+- Manipulação e Organização de Dados
+- Linguagem de Manipulação Padrão
+- Modelagem do Banco de Dados
+- Principais Conceitos
+- Formas de Normalização e Padronização
+
+Obs: Para facilitar a navegação, caso queira ler sobre algum tópico específico, basta copiar o nome do tópico de interesse, apertar o comando "Ctrl + F" e Colar na pesquisa para ir direto ao Tópico!
+
 
 ## Introdução ao Modelo Relacional
 
@@ -184,9 +187,9 @@ Exemplo: "Telefone, Endereço pode ser residencial ou comercial"
 Exemplo: "Data de Nascimento -> Idade"
 
 - Domínios
-São todos os tipos de dados possíveis de cada Coluna. 
+São todos os tipos de dados possíveis de cada Coluna.
 
-## Formas de Normalização e Padronização.
+## Formas de Normalização e Padronização
 
 As formas normais são princípios e técnicas de design utilizadas para estruturar bancos de dados relacionais de maneira eficiente e minimizar a redundância e dependências indesejadas. A normalização é o processo de organizar os dados.
 
